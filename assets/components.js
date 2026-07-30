@@ -3,7 +3,7 @@
     const slot = document.getElementById(id);
     if (!slot) return;
     try {
-      const response = await fetch(url);
+      const response = await fetch(url + '?v=20260730-2', { cache: 'no-store' });
       if (!response.ok) throw new Error(String(response.status));
       slot.innerHTML = await response.text();
     } catch (error) {
@@ -11,7 +11,6 @@
       console.error('Impossibile caricare ' + url, error);
     }
   }
-
   function markCurrentPage() {
     const file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     document.querySelectorAll('#site-header a[href]').forEach(function (link) {
@@ -19,7 +18,6 @@
       if (href === file) link.setAttribute('aria-current', 'page');
     });
   }
-
   document.addEventListener('DOMContentLoaded', async function () {
     await Promise.all([
       inject('site-header', 'includes/header.html'),
