@@ -3,7 +3,7 @@
     const slot = document.getElementById(id);
     if (!slot) return;
     try {
-      const response = await fetch(url + '?v=20260730-menu-borghi', { cache: 'no-store' });
+      const response = await fetch(url + '?v=20260730-territorio-preferiti', { cache: 'no-store' });
       if (!response.ok) throw new Error(String(response.status));
       slot.innerHTML = await response.text();
     } catch (error) {
@@ -11,13 +11,24 @@
       console.error('Impossibile caricare ' + url, error);
     }
   }
+
   function markCurrentPage() {
     const file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    document.querySelectorAll('#site-header .nav-link[href]').forEach(function (link) {
-      const href = (link.getAttribute('href') || '').split('#')[0].toLowerCase();
-      if (href === file) link.setAttribute('aria-current', 'page');
+    const links = Array.from(document.querySelectorAll('#site-header .nav-link[href]'));
+    links.forEach(function (link) {
+      link.removeAttribute('aria-current');
+      link.classList.remove('active');
     });
+    const current = links.find(function (link) {
+      const href = (link.getAttribute('href') || '').split('#')[0].split('?')[0].toLowerCase();
+      return href === file;
+    });
+    if (current) {
+      current.setAttribute('aria-current', 'page');
+      current.classList.add('active');
+    }
   }
+
   document.addEventListener('DOMContentLoaded', async function () {
     await Promise.all([
       inject('site-header', 'includes/header.html'),
