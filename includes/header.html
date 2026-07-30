@@ -1,9 +1,9 @@
 <style>
 #site-header{height:132px}
-#site-header .header{position:fixed;top:0;left:0;right:0;width:100%;z-index:10000;background:#fff;border-bottom:0;box-shadow:none;backdrop-filter:none}
+#site-header .header{position:fixed;top:0;left:0;right:0;width:100%;z-index:10000;background:rgba(255,254,249,.97);border-bottom:0;box-shadow:0 3px 18px rgba(20,56,29,.08);backdrop-filter:blur(12px)}
 #site-header .header-inner{width:min(1200px,calc(100% - 44px));min-height:132px;margin:0 auto;display:grid;grid-template-columns:280px minmax(0,1fr) 175px;gap:18px;align-items:center}
-#site-header .header-brand{display:flex;align-items:center;min-width:0}
-#site-header .header-logo{display:block;width:100%;max-width:260px;height:auto;object-fit:contain;object-position:left center}
+#site-header .header-brand{display:flex;align-items:center;min-width:0;overflow:visible}
+#site-header .header-logo{display:block;width:auto;max-width:260px;height:auto;max-height:88px;object-fit:contain;object-position:left center;flex:none}
 #site-header .nav{display:flex;justify-content:center;align-items:center;gap:14px;font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:700}
 #site-header .nav-item{position:relative}
 #site-header .nav-link{position:relative;display:flex;align-items:center;gap:3px;padding:44px 0 37px;white-space:nowrap;color:#142519}
@@ -23,8 +23,8 @@
 #site-header .mobile-toggle:focus-visible,#site-header .close:focus-visible,#site-header .mobile-menu a:focus-visible{outline:3px solid #547b42;outline-offset:3px}
 #site-header .mobile-menu-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 #site-header .mobile-menu-title{font:700 28px/1 "Cormorant Garamond",serif;color:#17371f}
-@media(max-width:1120px){#site-header .header-inner{grid-template-columns:240px minmax(0,1fr) 165px;gap:12px}#site-header .nav{gap:10px}#site-header .header-logo{max-width:235px}}
-@media(max-width:920px){#site-header{height:104px}#site-header .header-inner{grid-template-columns:1fr auto;min-height:104px;width:min(1200px,calc(100% - 28px))}#site-header .header-logo{width:270px;max-width:100%;height:auto}#site-header .nav,#site-header .header-tools .publish{display:none!important}#site-header .mobile-toggle{display:block;border:1px solid rgba(28,67,36,.14);background:#fff;border-radius:8px;padding:10px 13px;font-weight:800;color:#142519}#site-header .mobile-menu:target{display:block;position:fixed;inset:0;background:#fffef9;z-index:10001;padding:25px;overflow:auto;overscroll-behavior:contain}#site-header .mobile-menu a{display:block;padding:13px 0;border-bottom:1px solid rgba(28,67,36,.14);font-weight:700;color:#142519}#site-header .close{font-size:30px;line-height:1;text-align:right;border:0!important;padding:4px 8px!important}#site-header .mobile-menu .publish-mobile{margin-top:18px;background:#17371f;color:#fff;border-radius:8px;text-align:center;border:0}}
+@media(max-width:1120px){#site-header .header-inner{grid-template-columns:240px minmax(0,1fr) 165px;gap:12px}#site-header .nav{gap:10px}#site-header .header-logo{max-width:235px;max-height:82px}}
+@media(max-width:920px){#site-header{height:104px}#site-header .header-inner{grid-template-columns:1fr auto;min-height:104px;width:min(1200px,calc(100% - 28px))}#site-header .header-logo{width:auto;max-width:270px;max-height:76px;height:auto}#site-header .nav,#site-header .header-tools .publish{display:none!important}#site-header .mobile-toggle{display:block;border:1px solid rgba(28,67,36,.14);background:#fff;border-radius:8px;padding:10px 13px;font-weight:800;color:#142519}#site-header .mobile-menu:target{display:block;position:fixed;inset:0;background:#fffef9;z-index:10001;padding:25px;overflow:auto;overscroll-behavior:contain}#site-header .mobile-menu a{display:block;padding:13px 0;border-bottom:1px solid rgba(28,67,36,.14);font-weight:700;color:#142519}#site-header .close{font-size:30px;line-height:1;text-align:right;border:0!important;padding:4px 8px!important}#site-header .mobile-menu .publish-mobile{margin-top:18px;background:#17371f;color:#fff;border-radius:8px;text-align:center;border:0}}
 </style>
 <header class="header">
   <div class="header-inner">
