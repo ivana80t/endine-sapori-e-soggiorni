@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const VERSION = '20260803-menu-footer-fix';
+  const VERSION = '20260803-menu-links-v2';
 
   async function loadComponent(targetId, url) {
     const target = document.getElementById(targetId);
@@ -19,8 +19,8 @@
     const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     const groups = {
       'borghi.html': ['ranzanico.html','spinone-al-lago.html','monasterolo-del-castello.html','endine-gaiano.html'],
-      'dove-dormire.html': ['dormire-ranzanico.html','dormire-spinone.html','dormire-monasterolo.html','dormire-endine-gaiano.html','hotel.html','bed-breakfast.html','case-vacanza.html'],
-      'dove-mangiare.html': ['mangiare-ranzanico.html','mangiare-spinone.html','mangiare-monasterolo.html','mangiare-endine-gaiano.html','ristoranti.html','agriturismi.html','trattorie-pizzerie.html'],
+      'dove-dormire-lago-di-endine.html': ['dormire-ranzanico.html','dormire-spinone.html','dormire-monasterolo.html','dormire-endine-gaiano.html','hotel.html','bed-breakfast.html','case-vacanza.html'],
+      'dove-mangiare-lago-di-endine.html': ['mangiare-ranzanico.html','mangiare-spinone.html','mangiare-monasterolo.html','mangiare-endine-gaiano.html','ristoranti.html','agriturismi.html','trattorie-pizzerie.html'],
       'guide.html': ['cosa-vedere.html','passeggiate.html','natura.html','spiagge-relax.html','sport.html','sapori.html','panorami.html','con-bambini.html','weekend-lago-di-endine.html']
     };
 
