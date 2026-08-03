@@ -106,11 +106,32 @@
   .after-monuments{grid-template-columns:1fr}
 }
 
+
+/* Banner pubblicitari uniformi: etichetta solo interna */
+.ad-placement{width:min(1120px,calc(100% - 44px));margin:36px auto}
+.ad-slot{min-height:120px;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(28,67,36,.16);border-radius:12px;background:#f7f6ef;color:#657067;font:700 10px/1 Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.ad-slot>span{display:inline-block;padding:8px 12px}
+@media(max-width:620px){.ad-placement{width:calc(100% - 28px);margin:28px auto}.ad-slot{min-height:100px}}
+
+.seo-related{padding:54px 0;background:#f7f6ef}
+.seo-related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.seo-related-grid a{display:block;padding:20px;border:1px solid rgba(28,67,36,.15);border-radius:13px;background:#fff;color:#285c35;font-weight:800}
+.seo-related-grid small{display:block;margin-top:6px;color:#536056;font-weight:500;line-height:1.45}
+@media(max-width:900px){.seo-related-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.seo-related-grid{grid-template-columns:1fr}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Panorami e foto a Ranzanico","description":"Guida ai panorami e ai punti fotografici di Ranzanico: Lago di Endine, terrazzo morenico, borgo storico, via Panoramica, monte Pizzetto e monte Pier.","inLanguage":"it-IT","mainEntityOfPage":"https://www.endinesaporiesoggiorni.it/panorami-ranzanico.html","image":"https://www.endinesaporiesoggiorni.it/assets/ranzanico-panorami.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.endinesaporiesoggiorni.it/"},{"@type":"ListItem","position":2,"name":"Ranzanico","item":"https://www.endinesaporiesoggiorni.it/ranzanico.html"},{"@type":"ListItem","position":3,"name":"Panorami e foto","item":"https://www.endinesaporiesoggiorni.it/panorami-ranzanico.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quali sono i panorami più belli di Ranzanico?","acceptedAnswer":{"@type":"Answer","text":"I panorami più caratteristici si osservano dal terrazzo morenico su cui sorge il paese, dalle vie del borgo affacciate sul Lago di Endine, dalla zona di via Panoramica e dalle pendici del monte Pizzetto e del monte Pier."}},{"@type":"Question","name":"Perché Ranzanico è considerato panoramico?","acceptedAnswer":{"@type":"Answer","text":"Il nucleo abitato sorge a circa cinquecento metri di quota su un terrazzo morenico che domina il Lago di Endine e la Val Cavallina."}},{"@type":"Question","name":"Da dove si fotografa il Lago di Endine a Ranzanico?","acceptedAnswer":{"@type":"Answer","text":"Le visuali più interessanti si trovano nei punti aperti del borgo, lungo la viabilità panoramica e nelle aree accessibili che scendono verso il lago."}},{"@type":"Question","name":"Si può fotografare il borgo storico con il lago sullo sfondo?","acceptedAnswer":{"@type":"Answer","text":"Sì. La posizione rialzata del nucleo storico permette di combinare architetture, tetti, vegetazione e lago, scegliendo esclusivamente spazi pubblici o accessibili."}},{"@type":"Question","name":"Quali montagne circondano Ranzanico?","acceptedAnswer":{"@type":"Answer","text":"Il territorio si sviluppa lungo le pendici del monte Pizzetto e del monte Pier, che formano la cornice montana del paese."}},{"@type":"Question","name":"Qual è il momento migliore per fotografare il paesaggio?","acceptedAnswer":{"@type":"Answer","text":"Mattino e tardo pomeriggio offrono spesso una luce più morbida, ma stagione, meteo e orientamento modificano molto il risultato."}},{"@type":"Question","name":"Si può fotografare il tramonto a Ranzanico?","acceptedAnswer":{"@type":"Answer","text":"Sì. Dai punti rialzati con visuale aperta sul lago si possono cercare luci calde e riflessi, verificando in anticipo posizione del sole e accessibilità."}},{"@type":"Question","name":"Si può fotografare l’alba sul Lago di Endine?","acceptedAnswer":{"@type":"Answer","text":"Sì. Le prime ore del giorno possono offrire foschia, acqua più calma e riflessi delicati, soprattutto dai punti con visuale aperta verso est."}},{"@type":"Question","name":"Serve un’attrezzatura professionale?","acceptedAnswer":{"@type":"Answer","text":"No. Anche uno smartphone può produrre buone immagini se si cura l’orizzonte, si evita lo zoom digitale e si utilizza la luce naturale."}},{"@type":"Question","name":"Quali guide interne aiutano a trovare gli scorci?","acceptedAnswer":{"@type":"Answer","text":"Sono utili la guida a Ranzanico e le pagine dedicate a cosa vedere, natura e passeggiate, tutte collegate in questa pagina."}}]}]}</script>
+
+<meta property="og:url" content="https://www.endinesaporiesoggiorni.it/panorami-ranzanico.html">
+<meta name="twitter:title" content="Panorami e foto a Ranzanico | Lago di Endine e Val Cavallina">
+<meta name="twitter:description" content="Scopri i panorami più belli di Ranzanico: Lago di Endine, terrazzo morenico, borgo storico, via Panoramica, monte Pizzetto, monte Pier, alba e tramonto.">
+<meta name="twitter:image" content="https://www.endinesaporiesoggiorni.it/assets/ranzanico-panorami.jpg">
+<meta name="theme-color" content="#17371f">
+<meta name="author" content="Endine Sapori e Soggiorni">
+<meta http-equiv="content-language" content="it">
 </head>
 <body>
-<div id="site-header"></div>
+<header id="site-header"></header>
 <main>
 
 
@@ -147,6 +168,8 @@
 <p class="lead">Ranzanico sorge a circa cinquecento metri di quota su un terrazzo morenico naturalmente panoramico. Da qui lo sguardo raggiunge il <a class="seo-link" href="territorio.html"><strong>Lago di Endine</strong></a>, la Val Cavallina e i rilievi che circondano il paese. Questa guida raccoglie gli scorci più significativi e li collega alle pagine dedicate a <a class="seo-link" href="cosa-vedere-ranzanico.html"><strong>cosa vedere a Ranzanico</strong></a>, alla <a class="seo-link" href="natura-ranzanico.html"><strong>natura</strong></a> e alle <a class="seo-link" href="passeggiate-ranzanico.html"><strong>passeggiate</strong></a>.</p>
 </div>
 </section>
+<aside class="ad-placement" aria-label="Spazio pubblicitario"><div class="ad-slot"><span>Pubblicità</span></div></aside>
+
 
 
 
@@ -162,7 +185,7 @@
 <p>Per valorizzare il dislivello nelle fotografie conviene includere un elemento del borgo o della vegetazione in primo piano, lasciando il lago e i monti sullo sfondo. Lo scorcio è ideale per comprendere il rapporto tra geologia, paesaggio e insediamento.</p>
 <div class="route-meta"><span>Circa 500 m</span><span>Origine morenica</span><span>Vista sul lago</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Panorama sul Lago di Endine dal terrazzo morenico di Ranzanico" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Panorama sul Lago di Endine dal terrazzo morenico di Ranzanico" loading="lazy" decoding="async" fetchpriority="high"></div>
 </article>
 
 <article class="monument-row" id="borgo">
@@ -172,7 +195,7 @@
 <p>Per approfondire gli edifici e i luoghi storici si può consultare la pagina <a class="seo-link" href="cosa-vedere-ranzanico.html"><strong>cosa vedere a Ranzanico</strong></a>. Le fotografie vanno realizzate da spazi pubblici, evitando corti, passaggi e proprietà private.</p>
 <div class="route-meta"><span>Borgo storico</span><span>Architettura</span><span>Lago sullo sfondo</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Borgo storico di Ranzanico con panorama sul Lago di Endine" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Borgo storico di Ranzanico con panorama sul Lago di Endine" loading="lazy" decoding="async"></div>
 </article>
 
 <article class="monument-row" id="via-panoramica">
@@ -182,7 +205,7 @@
 <p>Non tutti i punti sono spazi pubblici: è quindi importante fermarsi solo dove consentito, senza occupare la carreggiata o entrare in proprietà private. Le visuali possono essere inserite in una passeggiata più ampia seguendo la guida alle <a class="seo-link" href="passeggiate-ranzanico.html"><strong>passeggiate a Ranzanico</strong></a>.</p>
 <div class="route-meta"><span>Vista lago</span><span>Strada panoramica</span><span>Accessi da rispettare</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Veduta panoramica sul Lago di Endine dal territorio di Ranzanico" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Veduta panoramica sul Lago di Endine dal territorio di Ranzanico" loading="lazy" decoding="async"></div>
 </article>
 
 <article class="monument-row" id="monti">
@@ -192,7 +215,7 @@
 <p>I percorsi montani richiedono una preparazione maggiore rispetto alle passeggiate nel paese. Prima di partire è necessario verificare segnaletica, condizioni del fondo, dislivello e meteo, facendo riferimento alla pagina dedicata alla <a class="seo-link" href="natura-ranzanico.html"><strong>natura di Ranzanico</strong></a>.</p>
 <div class="route-meta"><span>Pizzetto</span><span>Monte Pier</span><span>Panorama montano</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Pendici montane sopra Ranzanico e panorama sulla Val Cavallina" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Pendici montane sopra Ranzanico e panorama sulla Val Cavallina" loading="lazy" decoding="async"></div>
 </article>
 
 <article class="monument-row" id="alba-tramonto">
@@ -202,7 +225,7 @@
 <p>La posizione del sole varia durante l’anno e non esiste un unico punto valido in ogni stagione. Per l’alba sono utili le visuali aperte verso est; per il tramonto conviene individuare un punto consentito con orizzonte libero verso ovest.</p>
 <div class="route-meta"><span>Alba</span><span>Tramonto</span><span>Luce radente</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Luce del tramonto sul Lago di Endine vista da Ranzanico" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Luce del tramonto sul Lago di Endine vista da Ranzanico" loading="lazy" decoding="async"></div>
 </article>
 
 <article class="monument-row" id="consigli-foto">
@@ -212,7 +235,7 @@
 <p>La ricerca dell’inquadratura non deve danneggiare i luoghi: occorre restare sulle strade e sui percorsi consentiti, non attraversare coltivi, non superare recinzioni e non disturbare la fauna. Gli habitat locali sono descritti nella guida alla <a class="seo-link" href="natura-ranzanico.html"><strong>natura di Ranzanico</strong></a>.</p>
 <div class="route-meta"><span>Smartphone</span><span>Composizione</span><span>Rispetto del territorio</span></div>
 </div>
-<div class="monument-media"><img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Fotografia di paesaggio sul Lago di Endine a Ranzanico" loading="lazy"></div>
+<div class="monument-media"><img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Fotografia di paesaggio sul Lago di Endine a Ranzanico" loading="lazy" decoding="async"></div>
 </article>
 
 </div>
@@ -247,6 +270,8 @@
 </div>
 </div>
 </section>
+<aside class="ad-placement" aria-label="Spazio pubblicitario"><div class="ad-slot"><span>Pubblicità</span></div></aside>
+
 
 
 <section class="section" id="informazioni">
@@ -254,9 +279,9 @@
 <span class="eyebrow">Tre soggetti fotografici</span>
 <h2 class="title">I volti più riconoscibili di Ranzanico</h2>
 <div class="highlights">
-<article class="highlight"><img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Lago di Endine visto da Ranzanico"><div><h3>Il lago dall’alto</h3><p>La posizione del paese permette di osservare il bacino e la valle da una quota privilegiata.</p></div></article>
-<article class="highlight"><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Borgo storico di Ranzanico"><div><h3>Il borgo</h3><p>Vie, pietra, tetti e scorci sul lago raccontano il carattere storico del paese.</p></div></article>
-<article class="highlight"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Montagne sopra Ranzanico"><div><h3>Le pendici montane</h3><p>Monte Pizzetto e monte Pier formano la cornice naturale del territorio.</p></div></article>
+<article class="highlight"><img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Lago di Endine visto da Ranzanico" decoding="async" loading="lazy"><div><h3>Il lago dall’alto</h3><p>La posizione del paese permette di osservare il bacino e la valle da una quota privilegiata.</p></div></article>
+<article class="highlight"><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Borgo storico di Ranzanico" decoding="async" loading="lazy"><div><h3>Il borgo</h3><p>Vie, pietra, tetti e scorci sul lago raccontano il carattere storico del paese.</p></div></article>
+<article class="highlight"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Montagne sopra Ranzanico" decoding="async" loading="lazy"><div><h3>Le pendici montane</h3><p>Monte Pizzetto e monte Pier formano la cornice naturale del territorio.</p></div></article>
 </div>
 </div>
 </section>
@@ -297,10 +322,13 @@
 </div>
 </div>
 </section>
+<aside class="ad-placement" aria-label="Spazio pubblicitario"><div class="ad-slot"><span>Pubblicità</span></div></aside>
 
+
+<section class="seo-related" aria-labelledby="seo-related-title"><div class="container"><span class="eyebrow">Approfondisci</span><h2 class="title" id="seo-related-title">Organizza la visita al Lago di Endine</h2><div class="seo-related-grid"><a href="borghi.html">Borghi del Lago di Endine<small>Ranzanico, Spinone, Monasterolo ed Endine Gaiano.</small></a><a href="guide.html">Guide del Lago di Endine<small>Natura, panorami, passeggiate e consigli pratici.</small></a><a href="dove-dormire-lago-di-endine.html">Dove dormire<small>Hotel, B&B, agriturismi e appartamenti.</small></a><a href="dove-mangiare-lago-di-endine.html">Dove mangiare<small>Ristoranti, trattorie, pizzerie e agriturismi.</small></a></div></div></section>
 <div id="site-cta-strutture"></div>
 </main>
-<div id="site-footer"></div>
+<footer id="site-footer"></footer>
 <script defer src="assets/components.js?v=20260802-panorami-ranzanico"></script>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
